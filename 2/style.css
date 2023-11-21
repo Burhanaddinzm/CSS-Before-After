@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0e183e;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #0e183e;
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px 17px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.box h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.box .level-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 25px;
+}
+
+.box .level-container h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.box .level-container .bar-area {
+  border-radius: 10px;
+  border: 1px solid #c3cde9;
+  background-color: #e8ebf4;
+  width: 300px;
+  height: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box .level-container .bar-container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.box .level-container .bar-area::before {
+  content: "";
+  border-radius: 10px;
+  border: 1px solid #c3cde9;
+  background-color: #fc9860;
+  position: absolute;
+  left: 0;
+  width: 52%;
+  height: 13px;
+  box-sizing: border-box;
+}
+
+.box .level-container .chemistry .bar-area::before {
+  width: 76%;
+  background-color: #608cfc;
+}
+
+.box .level-container .science .bar-area::before {
+  width: 21%;
+  background-color: #fc6086;
+}
+
+.box .level-container span {
+  font-size: 12px;
+  font-weight: 500;
+}
